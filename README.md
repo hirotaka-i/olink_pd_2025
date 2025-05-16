@@ -2,6 +2,7 @@
 
 used this [repo](https://github.com/hirotaka-i/new_analysis.git)
 
+Second Large scale (5K protein) Olink data analysis
 
 # Data required (data folder)
 - `OLINK Disaease Blood Atlas.xlsx` - Olink data
@@ -14,7 +15,7 @@ perform_pca.py: input-`OLINK Disaease Blood Atlas.xlsx` output-`olink_pca*.png`,
 Rscript code/DEP.r\
  --data "temp/ds.csv"\
  --protein_start 22\
- --explanatory_vars "diagnosis,Sex,Age_at_collection,LEDD,pPC1,pPC2,pPC3"\
+ --explanatory_vars "diagnosis,Sex,Age_at_collection,LEDD,LEDD_sq,pPC1,pPC2,pPC3"\
  --contrast "diagnosisPD - diagnosisControl"\
  --log2_transform FALSE
 
